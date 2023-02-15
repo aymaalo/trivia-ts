@@ -163,5 +163,9 @@ export class Game {
             return winner;
           }
     }
+    public chanceToGetOutOfPrison(timeInPrison:number): number{
+        if(timeInPrison==0) return 0;
+        return 1/timeInPrison;
+    }
 
 }
