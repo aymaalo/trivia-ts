@@ -9,6 +9,9 @@ export class GameRunner {
         
         game.askForWinningGoldAmount();
 
+        if(game.howManyPlayers() >= 2)
+        {
+
         let notAWinner;
         do {
 
@@ -21,6 +24,9 @@ export class GameRunner {
             }
         
         } while (notAWinner);
+        } else{
+            console.log('Il doit y avoir deux joueurs minimum NULL NULL NULL bouhhhhhhh');
+        }
     }
 }
 

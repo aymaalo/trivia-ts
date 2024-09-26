@@ -67,7 +67,7 @@ export class Game {
         
     }
 
-    private howManyPlayers(): number {
+    public howManyPlayers(): number {
         return this.players.length;
     }
 
